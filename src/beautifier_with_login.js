@@ -1,4 +1,4 @@
-// v3-1
+// v4-login
 
 class Beautifier {
     /**
@@ -65,7 +65,7 @@ class Beautifier {
 
     observe() {
         this.observer = new MutationObserver(this.#beautify.bind(this));
-        this.observer.observe(document.getElementById('root'), {
+        this.observer.observe(document.body, {
             childList: true,
             subtree: true
         });

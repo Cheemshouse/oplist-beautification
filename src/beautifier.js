@@ -1,4 +1,4 @@
-// v3
+// v4
 
 // 提供用来监听代码控制的 url 变化的事件
 (() => {
@@ -80,7 +80,7 @@ class Beautifier {
 
     observe() {
         this.observer = new MutationObserver(this.#beautify.bind(this));
-        this.observer.observe(document.getElementById('root'), {
+        this.observer.observe(document.body, {
             childList: true,
             subtree: true
         });
