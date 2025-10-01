@@ -32,6 +32,7 @@ class Beautifier {
         '.hope-tooltip__arrow',
         '.hope-checkbox__control',// 复选框
         '.hope-modal__overlay', // 模态框遮罩
+        '.hope-select__option', // 下拉选项
         '.monaco-editor *', // 代码编辑器
         'button:not(.hope-menu__trigger)', // 除目录外按钮
         'svg' // SVG 图标
