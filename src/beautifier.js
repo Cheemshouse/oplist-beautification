@@ -28,12 +28,13 @@ class Beautifier {
         * 
      */
     static ignoredSelectors = [
-        '.hope-tooltip',
+        '.hope-tooltip', // 提示小标签及其装饰
         '.hope-tooltip__arrow',
-        '.hope-checkbox__control',
-        '.hope-modal__overlay',
-        'button:not(.hope-menu__trigger)',
-        'svg'
+        '.hope-checkbox__control',// 复选框
+        '.hope-modal__overlay', // 模态框遮罩
+        '.monaco-editor *', // 代码编辑器
+        'button:not(.hope-menu__trigger)', // 除目录外按钮
+        'svg' // SVG 图标
     ];
 
     static getSelector(mainSelector) {
@@ -46,7 +47,7 @@ class Beautifier {
     static lightBgColor = 'rgba(255, 255, 255, 0.8)';
     static darkBgColor = 'rgb(32, 36, 37)';
 
-    static specificPrefix = 'rgba(132, 133, 141';
+    static specificPrefix = 'rgba(132, 133, 141,';
 
     constructor() {
         this.observer = null;
