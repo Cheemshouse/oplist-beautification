@@ -1,4 +1,4 @@
-// v5
+// v6
 
 // 提供用来监听代码控制的 url 变化的事件
 (() => {
@@ -31,7 +31,8 @@ class Beautifier {
         '.hope-tooltip', // 提示小标签及其装饰
         '.hope-tooltip__arrow',
         '.hope-checkbox__control',// 复选框
-        '.hope-modal__overlay', // 模态框遮罩
+        '.hope-modal__overlay', // 模态框遮罩 
+        '.hope-drawer__overlay', // 抽屉遮罩
         '.hope-select__option', // 下拉选项
         '.monaco-editor *', // 代码编辑器
         'button:not(.hope-menu__trigger)', // 除目录外按钮
