@@ -1,4 +1,4 @@
-// v6
+// v7
 
 // 提供用来监听代码控制的 url 变化的事件
 (() => {
@@ -34,7 +34,8 @@ class Beautifier {
         '.hope-modal__overlay', // 模态框遮罩 
         '.hope-drawer__overlay', // 抽屉遮罩
         '.hope-select__option', // 下拉选项
-        '.monaco-editor *', // 代码编辑器
+        '.monaco-editor, .monaco-editor *', // 代码编辑器
+        '.art-video-player, .art-video-player *', // 视频播放器
         'button:not(.hope-menu__trigger)', // 除目录外按钮
         'svg' // SVG 图标
     ];
